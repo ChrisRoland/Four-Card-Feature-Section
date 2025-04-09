@@ -95,6 +95,40 @@ img {
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    position: static;
+  }
+
+  .card {
+    position: static;
+    width: 100%;
+    max-width: 330px;
+    transform: none;
+  }
+
+  .team-builder,
+  .supervisor,
+  .calculator,
+  .karma {
+    transform: none;
+    top: unset;
+    left: unset;
+    right: unset;
+    bottom: unset;
+  }
+
+  .description {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .card-wrapper {
     display: flex;
@@ -106,6 +140,10 @@ img {
 
   .description {
     width: 90%;
+  }
+
+  main {
+    margin: 3rem 2rem 5rem;
   }
 
   .card {
